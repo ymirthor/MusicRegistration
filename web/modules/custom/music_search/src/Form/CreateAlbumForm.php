@@ -174,7 +174,7 @@ class CreateAlbumForm extends FormBase {
       ];
 
       // Handles artist
-      $artist_name_id_prov = explode(" ", $album_data['album_artist']);
+      $artist_name_id_prov = explode(":::", $album_data['album_artist']);
       $artist_id = $this->dataService->get_node_id('artist', $artist_name_id_prov[0]);
 
       // If artist doesn't exist in database.
@@ -293,7 +293,7 @@ class CreateAlbumForm extends FormBase {
       // artist
       foreach ($album->artists as $artist) {
         if (!empty($artist->name)) {
-          $data['album_artists'][$artist->name . " " . $artist->id . " " . strtolower($provider)] = $artist->name . $suffix;
+          $data['album_artists'][$artist->name . ":::" . $artist->id . ":::" . strtolower($provider)] = $artist->name . $suffix;
         }
       }
       // cover
