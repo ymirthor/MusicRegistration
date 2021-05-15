@@ -1,0 +1,7 @@
+spotify_search.config_form:
+  path: '/admin/config/spotify-search-config'
+  defaults:
+    _form: Drupal\spotify_search\Form\SpotifySearchForm
+    _title: 'Spotify search configuration'
+  requirements:
+    _permission: 'administer site configuration'

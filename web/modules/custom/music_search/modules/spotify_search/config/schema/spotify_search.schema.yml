@@ -1,0 +1,10 @@
+spotify_search.settings:
+  type: config_object
+  label: 'Spotify Search settings'
+  mapping:
+    spotify_secret:
+      type: text
+      label: 'Spotify Secret'
+    spotify_id:
+      type: text
+      label: 'Spotify ID'

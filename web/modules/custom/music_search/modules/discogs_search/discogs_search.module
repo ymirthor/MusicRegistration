@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Discogs Search module file.
+ * Only implements hook help.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function discogs_search_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.discogs_search':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This is a submodule for the music search, the Discogs Search module.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

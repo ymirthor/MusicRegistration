@@ -1,0 +1,6 @@
+name: Discogs Search
+description: Search module for Music Search that enables searches to the discogs database
+type: module
+core_version_requirement: ^9
+package: Custom
+configure: discogs_search.config_form

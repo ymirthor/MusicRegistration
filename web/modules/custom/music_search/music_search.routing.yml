@@ -1,0 +1,29 @@
+music_search.add_album:
+  path: '/music_search/add-album'
+  defaults:
+    _form: '\Drupal\music_search\Form\AddAlbumForm'
+    _title: 'Add Album'
+  requirements:
+    _permission: 'access content' # TODO: modify to 'create new content'
+
+music_search.autocomplete:
+  path: '/music_search/artist-autocomplete'
+  defaults:
+    _controller: '\Drupal\music_search\Controller\MusicSearchController::autoComplete'
+    _format: json
+  requirements:
+    _permission: 'access content'
+
+music_search.pick_data:
+  path: '/music_search/albums'
+  defaults:
+    _form: '\Drupal\music_search\Form\PickDataForm'
+  requirements:
+    _permission: 'access content'
+
+music_search.create_album:
+  path: '/music_search/create-album'
+  defaults:
+    _form: '\Drupal\music_search\Form\CreateAlbumForm'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,7 @@
+discogs_search.config_form:
+  path: '/admin/config/discogs-search-config'
+  defaults:
+    _form: Drupal\discogs_search\Form\DiscogsSearchForm
+    _title: 'Discogs search configuration'
+  requirements:
+    _permission: 'administer site configuration'

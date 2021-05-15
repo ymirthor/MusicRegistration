@@ -1,0 +1,8 @@
+services:
+  music_search.api_search:
+    class: \Drupal\music_search\ApiSearch
+  music_search.search_interface:
+    class: \Drupal\music_search\SearchInterface
+  music_search.data_service:
+    class: \Drupal\music_search\DataService
+    arguments: ["@config.factory", "@entity_type.manager"]

@@ -1,0 +1,10 @@
+discogs_search.settings:
+  type: config_object
+  label: 'Discogs Search settings'
+  mapping:
+    discogs_key:
+      type: text
+      label: 'Discogs Key'
+    discogs_secret:
+      type: text
+      label: 'Discogs Secret'

@@ -1,0 +1,6 @@
+services:
+  discogs_search.search:
+    class: Drupal\discogs_search\DiscogsSearch
+    arguments: ["@music_search.api_search", "@config.factory", "@discogs_search.parser"]
+  discogs_search.parser:
+    class: Drupal\discogs_search\DiscogsParser

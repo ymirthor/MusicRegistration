@@ -1,0 +1,4 @@
+services:
+  spotify_search.search:
+    class: Drupal\spotify_search\SpotifySearch
+    arguments: ["@music_search.api_search", "@config.factory", "@cache.default"]
