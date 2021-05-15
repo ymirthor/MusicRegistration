@@ -31,3 +31,6 @@ ddev import-db --src=database/database.sql.gz
 ```
 
 6. Navigate to the website [url](https://music-registration.ddev.site/) in your preferred browser.
+
+## MusicSearch Module
+See the README file in \web\modules\custom\music_search for details.
