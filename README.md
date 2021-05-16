@@ -8,7 +8,7 @@ This [Drupal](https://www.drupal.org/) website is my implementation for the firs
 
 
 ## Installation
-1. Start by downloading the [image files](https://drive.google.com/drive/folders/1cIGdOpSH_25Xo-6d5AzBNRDcC4XciPUp?usp=sharing).
+1. Start by downloading the [image files](https://drive.google.com/drive/folders/1cIuiORt2m4Fw-8zD0qUPeEJUI4Xx0Kwz?usp=sharing).
 
 2. Place the downloaded files into the web/sites/default/files directory.
 
